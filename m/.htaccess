@@ -1,0 +1,42 @@
+# Customized error pages
+ErrorDocument 403 /403.html
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# Required with Godaddy
+Options -MultiViews
+
+# Turn on mod_rewrite
+RewriteEngine On
+
+# Remove .php from urls
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+# Removes index.php from ExpressionEngine URLs
+RewriteCond %{THE_REQUEST} ^GET.*index [NC]
+RewriteRule (.*?)index.php/*(.*) /$1$2 [R=301,NE,L]
+
+# Directs all EE web requests through the site index file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php/$1 [L]
+
+
+
+# REDIRECT TO DESKTOP
+
+# Check if this is the noredirect query string
+RewriteCond %{QUERY_STRING} (^|&)noredirect=true(&|$)
+# Set a cookie, and skip the next rule
+RewriteRule ^ - [CO=mredir:0:%{HTTP_HOST},S]
+
+# Detect non-mobile browser
+RewriteCond %{HTTP_USER_AGENT} "!(android|blackberry|googlebot-mobile|iemobile|ipad|iphone|ipod|opera mobile|palmos|webos)" [NC]
+
+# Check to make sure we haven't set the cookie before
+RewriteCond %{HTTP:Cookie}        !\smredir=0(;|$)
+
+# Redirect to desktop page
+RewriteRule ^ http://hintclub.net%{REQUEST_URI} [R,L]
