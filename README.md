@@ -1,18 +1,19 @@
 # Si Alza il Vento Project
 
-### How to setup Apache server
+## How to setup Apache server
 
 
 > Domain `A` record must point to server static IP.
+>
 > Domain `CNAME` record `m` must point to `@`.
 
 
-##### Install Apache2 and PHP
-$ sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt
+#### Install Apache2 and PHP
+`sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt`
 
 
-##### Configure Apache to prioritize .php over .html
-$ sudo nano /etc/apache2/mods-enabled/dir.conf
+#### Configure Apache to prioritize .php over .html
+`sudo nano /etc/apache2/mods-enabled/dir.conf`
 
 	<IfModule mod_dir.c>
     	DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
@@ -20,11 +21,12 @@ $ sudo nano /etc/apache2/mods-enabled/dir.conf
 
 
 > Desktop website "index" is located in `/var/www/html/example/www`
+>
 > Mobile website "index" is located in `/var/www/html/example/m`
 
 
-##### Enable .htaccess override
-$ sudo nano /etc/apache2/apache2.conf
+#### Enable .htaccess override
+`sudo nano /etc/apache2/apache2.conf`
 
 	<Directory /var/www/>
 		Options Indexes FollowSymLinks
@@ -33,13 +35,14 @@ $ sudo nano /etc/apache2/apache2.conf
 	</Directory>
 
 
-##### Enable mod_rewrite
-$ sudo a2enmod rewrite
-$ sudo service apache2 restart
+#### Enable mod_rewrite
+`sudo a2enmod rewrite`
+
+`sudo service apache2 restart`
 
 
-##### Setup VirtualHost for desktop site
-$ sudo nano /etc/apache2/sites-available/example.com.conf
+#### Setup VirtualHost for desktop site
+`sudo nano /etc/apache2/sites-available/example.com.conf`
 
 	<VirtualHost *:80>
 		ServerName example.com
@@ -51,8 +54,8 @@ $ sudo nano /etc/apache2/sites-available/example.com.conf
 	</VirtualHost>
 
 
-##### Setup VirtualHost for mobile site
-$ sudo nano /etc/apache2/sites-available/m.example.com.conf
+#### Setup VirtualHost for mobile site
+`sudo nano /etc/apache2/sites-available/m.example.com.conf`
 
 	<VirtualHost *:80>
 		ServerName m.example.com
@@ -64,24 +67,27 @@ $ sudo nano /etc/apache2/sites-available/m.example.com.conf
 	</VirtualHost>
 
 
-##### Activate VirtualHosts
-$ sudo a2ensite example.com.conf
-$ sudo a2ensite m.example.com.conf
-$ sudo service apache2 restart
+#### Activate VirtualHosts
+`sudo a2ensite example.com.conf`
+
+`sudo a2ensite m.example.com.conf`
+
+`sudo service apache2 restart`
+
 This command copies the .conf files from sites-available to sites-enabled. The reverse comand is `a2dissite`.
 
 
-##### Edit global `.htaccess`
-$ sudo nano /var/www/html/.htaccess
+#### Edit global .htaccess
+`sudo nano /var/www/html/.htaccess`
 
 
-##### Edit desktop `.htaccess`
-$ sudo nano /var/www/html/example/www/.htaccess
+#### Edit desktop .htaccess
+`sudo nano /var/www/html/example/www/.htaccess`
 
 
-##### Edit mobile `.htaccess`
-$ sudo nano /var/www/html/example/m/.htaccess
+#### Edit mobile .htaccess
+`sudo nano /var/www/html/example/m/.htaccess`
 
 
-##### Create soft links to assets if needed
-$ sudo ln -s /source /destination
+#### Create soft links to assets if needed
+`sudo ln -s /source /destination`
