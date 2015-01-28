@@ -1,10 +1,10 @@
 <?php
-  $page_title = "Si Alza il Vento";
+  $page_title = "Si Alza il Vento - Il tema amoroso: tra destino e raffinatezza artistica";
 ?>
 <?php include("../include/head.php"); ?>
-	<body id="menu-home">
+	<body id="menu-amoroso">
 		<div class="flex">
 			<?php include("../include/menu.html"); ?>
 			<div class="grid clearfix">
-				<?php include("../include/articles/home.html"); ?>
+				<?php include("../include/articles/tema_amoroso.html"); ?>
 				<?php include("../include/footer.html"); ?>

@@ -63,6 +63,15 @@ nav {
 	line-height: 40px;
 	line-height: 2.5rem;
 }
+.submenu {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 35px;
+	padding-left: 15px;
+	font-style: italic;
+/*	display: none; */
+}
 a {
 	color: #111;
 	text-decoration: none;
@@ -86,7 +95,7 @@ h1 {
 	font-size: 52px;
 	font-size: 3.25rem;
 	text-align: center;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 2px rgba(0, 0, 0, .8);
 	margin: 0;
 }
 .alert {
@@ -123,6 +132,48 @@ article {
 	width: 550px;
 	width: 34.38rem;
 }
+.lyrics_l,
+.lyrics_r {
+	color: #777;
+	font-size: 16px;
+	font-size: 1rem;
+	font-family: 'Alegreya', serif;
+	font-style: italic;
+	line-height: 24px;
+	line-height: 1.5rem;
+	padding: 0 30px;
+	width: 50%;
+	box-sizing: border-box;
+}
+.lyrics_l,
+.previous {
+	float: left;
+}
+.lyrics_r,
+.next {
+	float: right;
+}
+.previous,
+.next {
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 26px;
+	line-height: 1.5rem;
+	padding: 20px 30px;
+	width: 40%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.curiosita {
+	color: #777;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 24px;
+	line-height: 1.5rem;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 40px auto;
+}
 /* ===============
 BACKGROUNDS
 =============== */
@@ -140,23 +191,56 @@ footer {
 #bg-intro {
 	background: #109ceb; /* fallback */
 	background: url("../../assets/bg/intro.jpg"); /* fallback */
-	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Saf4+, Chrome */
-	background:  -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Chrome 10+, Saf5.1+ */
-	background:     -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* FF3.6+ */
-	background:      -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* IE10 */
-	background:       -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Opera 11.10+ */
-	background:          linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* W3C */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/intro.jpg"); /* W3C */
 	background-size: cover;
 }
-#bg-faq {
+#bg-amoroso {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/faq.jpg"); /* fallback */
-	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* Saf4+, Chrome */
-	background:  -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* Chrome 10+, Saf5.1+ */
-	background:     -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* FF3.6+ */
-	background:      -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* IE10 */
-	background:       -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* Opera 11.10+ */
-	background:          linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/faq.jpg"); /* W3C */
+	background: url("../../assets/bg/amore01.jpg"); /* fallback */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore01.jpg"); /* W3C */
+	background-size: cover;
+}
+#bg-amoroso1 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore02.jpg"); /* fallback */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore02.jpg"); /* W3C */
+	background-size: cover;
+}
+#bg-amoroso2 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore03.jpg"); /* fallback */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore03.jpg"); /* W3C */
+	background-size: cover;
+}
+#bg-amoroso3 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore04.jpg"); /* fallback */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/amore04.jpg"); /* W3C */
 	background-size: cover;
 }
 @media (max-width: 800px) {
@@ -165,19 +249,37 @@ footer {
 		background: url("../../assets/bg/intro.jpg");
 		background-size: cover;
 	}
-	#bg-faq {
+	#bg-amoroso {
 		background: #109ceb; /* fallback */
-		background: url("../../assets/bg/faq.jpg");
+		background: url("../../assets/bg/amore01.jpg");
+		background-size: cover;
+	}
+	#bg-amoroso1 {
+		background: #109ceb; /* fallback */
+		background: url("../../assets/bg/amore02.jpg");
+		background-size: cover;
+	}
+	#bg-amoroso2 {
+		background: #109ceb; /* fallback */
+		background: url("../../assets/bg/amore03.jpg");
+		background-size: cover;
+	}
+	#bg-amoroso3 {
+		background: #109ceb; /* fallback */
+		background: url("../../assets/bg/amore04.jpg");
 		background-size: cover;
 	}
 }
 /* ===============
 MENU IDENTIFIERS
 =============== */
-body#menu-intro li#menu-intro,
-body#menu-faq li#menu-faq {
-	font-size: 24px;
-	font-size: 1.5rem;
+body#menu-home li#menu-home,
+body#menu-amoroso li#menu-amoroso,
+body#menu-amoroso1 li#menu-amoroso1,
+body#menu-amoroso2 li#menu-amoroso2,
+body#menu-amoroso3 li#menu-amoroso3 {
+/*	font-size: 24px;
+	font-size: 1.5rem; */
 	font-style: italic;
 	background: #68B3F4; /* fallback */
 	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Saf4+, Chrome */
@@ -195,10 +297,6 @@ aside {
 }
 nav ul {
 	list-style-type: none;
-}
-nav li {
-	padding-left: 20px;
-	padding-left: 1.25rem;
 }
 header,
 section,
@@ -260,6 +358,10 @@ header {
 section {
 	margin: 60px 0;
 	margin: 3.75rem 0;
+}
+.colonne {
+	width: 100%;
+	margin: 60px auto;
 }
 /* ===============
 MEDIA
@@ -386,4 +488,11 @@ NAVIGATION BUTTON
 	.navmenu {
 		width: 90%;
 	}
+}
+
+.button-top {
+	width: 200px;
+	display: table;
+	margin: 50px auto;
+	text-align: center;
 }
