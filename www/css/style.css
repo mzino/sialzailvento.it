@@ -92,11 +92,14 @@ nav a:hover {
 }
 h1 {
 	color: #f6e48c;
-	font-size: 52px;
-	font-size: 3.25rem;
+	font-size: 48px;
+	font-size: 3rem;
 	text-align: center;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 2px rgba(0, 0, 0, .8);
 	margin: 0;
+}
+.centered {
+	text-align: center;
 }
 .alert {
 	color: #f00;
@@ -141,7 +144,8 @@ article {
 	font-style: italic;
 	line-height: 24px;
 	line-height: 1.5rem;
-	padding: 0 30px;
+	padding: 0 18px;
+	padding: 0 1.125rem;
 	width: 50%;
 	box-sizing: border-box;
 }
@@ -274,12 +278,37 @@ footer {
 MENU IDENTIFIERS
 =============== */
 body#menu-home li#menu-home,
+body#menu-prefazione li#menu-prefazione,
+body#menu-intro li#menu-intro,
+body#menu-storico li#menu-storico,
+body#menu-storico1 li#menu-storico1,
+body#menu-storico2 li#menu-storico2,
+body#menu-storico3 li#menu-storico3,
+body#menu-storico4 li#menu-storico4,
+body#menu-politico li#menu-politico,
+body#menu-politico1 li#menu-politico1,
 body#menu-amoroso li#menu-amoroso,
 body#menu-amoroso1 li#menu-amoroso1,
 body#menu-amoroso2 li#menu-amoroso2,
-body#menu-amoroso3 li#menu-amoroso3 {
-/*	font-size: 24px;
-	font-size: 1.5rem; */
+body#menu-amoroso3 li#menu-amoroso3,
+body#menu-miyazaki li#menu-miyazaki,
+body#menu-miyazaki1 li#menu-miyazaki1,
+body#menu-miyazaki2 li#menu-miyazaki2,
+body#menu-miyazaki3 li#menu-miyazaki3,
+body#menu-miyazaki4 li#menu-miyazaki4,
+body#menu-miyazaki5 li#menu-miyazaki5,
+body#menu-miyazaki6 li#menu-miyazaki6,
+body#menu-critica li#menu-critica,
+body#menu-critica1 li#menu-critica1,
+body#menu-critica2 li#menu-critica2,
+body#menu-considerazioni li#menu-considerazioni,
+body#menu-considerazioni1 li#menu-considerazioni1,
+body#menu-considerazioni2 li#menu-considerazioni2,
+body#menu-considerazioni3 li#menu-considerazioni3,
+body#menu-casttecnico li#menu-casttecnico,
+body#menu-bluray li#menu-bluray,
+body#menu-soundtrack li#menu-soundtrack,
+body#menu-credits li#menu-credits {
 	font-style: italic;
 	background: #68B3F4; /* fallback */
 	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Saf4+, Chrome */
@@ -362,6 +391,12 @@ section {
 .colonne {
 	width: 100%;
 	margin: 60px auto;
+}
+.button-top {
+	width: 200px;
+	display: table;
+	margin: 50px auto;
+	text-align: center;
 }
 /* ===============
 MEDIA
@@ -489,10 +524,19 @@ NAVIGATION BUTTON
 		width: 90%;
 	}
 }
-
-.button-top {
-	width: 200px;
-	display: table;
-	margin: 50px auto;
-	text-align: center;
+/* ===============
+TABLE
+=============== */
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 5px 8px;
+	padding: 0.3125rem  0.5rem;
 }

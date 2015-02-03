@@ -12,23 +12,23 @@ h3 {
 	font-weight: normal;
 }
 h1 {
-	font-size: 250px;
-	line-height: 230px;
+	font-size: 200px;
+	line-height: 180px;
 }
 h2 {
-	font-size: 50px;
-	line-height: 60px;
+	font-size: 45px;
+	line-height: 55px;
 }
 h3 {
-	font-size: 25px;
-	line-height: 30px;
+	font-size: 20px;
+	line-height: 25px;
 	margin: 30px auto;
 }
 a {
 	color: #fff;
 }
 img {
-	margin: 50px auto 20px auto;
+	margin: 50px auto 0 auto;
 	display: block;
-	height: 350px;
+	height: 320px;
 }

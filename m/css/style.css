@@ -44,6 +44,15 @@ nav {
 	line-height: 40px;
 	line-height: 2.5rem;
 }
+.submenu {
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 35px;
+	padding-left: 15px;
+	font-style: italic;
+/*	display: none; */
+}
 a {
 	color: #111;
 	text-decoration: none;
@@ -64,11 +73,14 @@ nav a:hover {
 }
 h1 {
 	color: #f6e48c;
-	font-size: 52px;
-	font-size: 3.25rem;
+	font-size: 48px;
+	font-size: 3rem;
 	text-align: center;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, .8), -1px -1px 2px rgba(0, 0, 0, .8);
 	margin: 0;
+}
+.centered {
+	text-align: center;
 }
 .alert {
 	color: #f00;
@@ -104,6 +116,49 @@ article {
 	width: 550px;
 	width: 34.38rem;
 }
+.lyrics_l,
+.lyrics_r {
+	color: #777;
+	font-size: 16px;
+	font-size: 1rem;
+	font-family: 'Alegreya', serif;
+	font-style: italic;
+	line-height: 24px;
+	line-height: 1.5rem;
+	padding: 0 18px;
+	padding: 0 1.125rem;
+	width: 50%;
+	box-sizing: border-box;
+}
+.lyrics_l,
+.previous {
+	float: left;
+}
+.lyrics_r,
+.next {
+	float: right;
+}
+.previous,
+.next {
+	font-size: 20px;
+	font-size: 1.25rem;
+	line-height: 26px;
+	line-height: 1.5rem;
+	padding: 20px 30px;
+	width: 40%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.curiosita {
+	color: #777;
+	font-size: 14px;
+	font-size: 0.875rem;
+	line-height: 24px;
+	line-height: 1.5rem;
+	padding: 0 20px;
+	box-sizing: border-box;
+	margin: 40px auto;
+}
 /* ===============
 BACKGROUNDS
 =============== */
@@ -123,18 +178,61 @@ footer {
 	background: url("../../assets/bg/intro.jpg");
 	background-size: cover;
 }
-#bg-faq {
+#bg-amoroso {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/faq.jpg");
+	background: url("../../assets/bg/amore01.jpg");
+	background-size: cover;
+}
+#bg-amoroso1 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore02.jpg");
+	background-size: cover;
+}
+#bg-amoroso2 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore03.jpg");
+	background-size: cover;
+}
+#bg-amoroso3 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/amore04.jpg");
 	background-size: cover;
 }
 /* ===============
 MENU IDENTIFIERS
 =============== */
+body#menu-home li#menu-home,
+body#menu-prefazione li#menu-prefazione,
 body#menu-intro li#menu-intro,
-body#menu-faq li#menu-faq {
-	font-size: 24px;
-	font-size: 1.5rem;
+body#menu-storico li#menu-storico,
+body#menu-storico1 li#menu-storico1,
+body#menu-storico2 li#menu-storico2,
+body#menu-storico3 li#menu-storico3,
+body#menu-storico4 li#menu-storico4,
+body#menu-politico li#menu-politico,
+body#menu-politico1 li#menu-politico1,
+body#menu-amoroso li#menu-amoroso,
+body#menu-amoroso1 li#menu-amoroso1,
+body#menu-amoroso2 li#menu-amoroso2,
+body#menu-amoroso3 li#menu-amoroso3,
+body#menu-miyazaki li#menu-miyazaki,
+body#menu-miyazaki1 li#menu-miyazaki1,
+body#menu-miyazaki2 li#menu-miyazaki2,
+body#menu-miyazaki3 li#menu-miyazaki3,
+body#menu-miyazaki4 li#menu-miyazaki4,
+body#menu-miyazaki5 li#menu-miyazaki5,
+body#menu-miyazaki6 li#menu-miyazaki6,
+body#menu-critica li#menu-critica,
+body#menu-critica1 li#menu-critica1,
+body#menu-critica2 li#menu-critica2,
+body#menu-considerazioni li#menu-considerazioni,
+body#menu-considerazioni1 li#menu-considerazioni1,
+body#menu-considerazioni2 li#menu-considerazioni2,
+body#menu-considerazioni3 li#menu-considerazioni3,
+body#menu-casttecnico li#menu-casttecnico,
+body#menu-bluray li#menu-bluray,
+body#menu-soundtrack li#menu-soundtrack,
+body#menu-credits li#menu-credits {
 	font-style: italic;
 	background: #68B3F4; /* fallback */
 	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Saf4+, Chrome */
@@ -152,11 +250,6 @@ aside {
 }
 nav ul {
 	list-style-type: none;
-	padding-left: 15px;
-	padding-left: 0.9375em;
-}
-nav li {
-	padding-left: 0;
 }
 header,
 section,
@@ -197,6 +290,16 @@ header {
 section {
 	margin: 60px 0;
 	margin: 3.75rem 0;
+}
+.colonne {
+	width: 100%;
+	margin: 60px auto;
+}
+.button-top {
+	width: 200px;
+	display: table;
+	margin: 50px auto;
+	text-align: center;
 }
 /* ===============
 MEDIA
@@ -336,4 +439,20 @@ SMALL SCREEN OPT
 		margin: 30px 0;
 		margin: 1.875rem 0;
 	}
+}
+/* ===============
+TABLE
+=============== */
+table {
+	border-collapse: collapse;
+	width: 90%;
+	margin: 0 auto;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+th,
+td {
+	border: 1px solid #ddd;
+	padding: 5px 8px;
+	padding: 0.3125rem  0.5rem;
 }
