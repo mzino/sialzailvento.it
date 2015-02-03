@@ -60,8 +60,8 @@ nav {
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-weight: 700;
-	line-height: 40px;
-	line-height: 2.5rem;
+	line-height: 48px;
+	line-height: 3rem;
 }
 .submenu {
 	font-size: 16px;
@@ -70,7 +70,12 @@ nav {
 	line-height: 35px;
 	padding-left: 15px;
 	font-style: italic;
-/*	display: none; */
+	display: none;
+}
+.navspazio {
+	margin: -8px auto;
+	box-sizing: border-box;
+	color: #f6e48c;
 }
 a {
 	color: #111;
@@ -311,12 +316,45 @@ body#menu-soundtrack li#menu-soundtrack,
 body#menu-credits li#menu-credits {
 	font-style: italic;
 	background: #68B3F4; /* fallback */
-	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Saf4+, Chrome */
-	background:  -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Chrome 10+, Saf5.1+ */
-	background:     -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* FF3.6+ */
-	background:      -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* IE10 */
-	background:       -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */
-	background:          linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,1) 100%); /* W3C */
+	background: -webkit-gradient(linear, left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* Saf4+, Chrome */
+	background:  -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* Chrome 10+, Saf5.1+ */
+	background:     -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* FF3.6+ */
+	background:      -ms-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* IE10 */
+	background:       -o-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* Opera 11.10+ */
+	background:          linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,.7) 100%); /* W3C */
+}
+/* ===============
+TOGGLE SUBMENU
+=============== */
+body#menu-home .sm1,
+body#menu-prefazione .sm1,
+body#menu-intro .sm1,
+body#menu-storico .sm2,
+body#menu-storico1 .sm2,
+body#menu-storico2 .sm2,
+body#menu-storico3 .sm2,
+body#menu-storico4 .sm2,
+body#menu-politico .sm3,
+body#menu-politico1 .sm3,
+body#menu-amoroso .sm4,
+body#menu-amoroso1 .sm4,
+body#menu-amoroso2 .sm4,
+body#menu-amoroso3 .sm4,
+body#menu-miyazaki .sm5,
+body#menu-miyazaki1 .sm5,
+body#menu-miyazaki2 .sm5,
+body#menu-miyazaki3 .sm5,
+body#menu-miyazaki4 .sm5,
+body#menu-miyazaki5 .sm5,
+body#menu-miyazaki6 .sm5,
+body#menu-critica .sm6,
+body#menu-critica1 .sm6,
+body#menu-critica2 .sm6,
+body#menu-considerazioni .sm7,
+body#menu-considerazioni1 .sm7,
+body#menu-considerazioni2 .sm7,
+body#menu-considerazioni3 .sm7 {
+	display: block;
 }
 /* ===============
 STYLE
@@ -326,6 +364,10 @@ aside {
 }
 nav ul {
 	list-style-type: none;
+}
+ul {
+	padding: 0 0 0 25px;
+	padding: 0 0 0 1.563rem;
 }
 header,
 section,
