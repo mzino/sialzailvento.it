@@ -1,5 +1,5 @@
 <?php
-  $page_title = "Si Alza il Vento";
+  $page_title = "Si Alza il Vento - Un film per il cuore ancora prima che per gli occhi";
 ?>
 <?php include("../include/head.php"); ?>
 	<body id="menu-home">
