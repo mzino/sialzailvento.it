@@ -188,24 +188,99 @@ footer {
 	background: url("../../assets/bg/intro.jpg");
 	background-size: cover;
 }
+#bg-personaggi {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/personaggi.jpg");
+	background-size: cover;
+}
+#bg-storico01 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/storico01.jpg");
+	background-size: cover;
+}
+#bg-storico02 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/storico02.jpg");
+	background-size: cover;
+}
+#bg-politico {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/politico.jpg");
+	background-size: cover;
+}
 #bg-amoroso {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/amore01.jpg");
+	background: url("../../assets/bg/amoroso01.jpg");
 	background-size: cover;
 }
 #bg-amoroso1 {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/amore02.jpg");
+	background: url("../../assets/bg/amoroso02.jpg");
 	background-size: cover;
 }
 #bg-amoroso2 {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/amore03.jpg");
+	background: url("../../assets/bg/amoroso03.jpg");
 	background-size: cover;
 }
 #bg-amoroso3 {
 	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/amore04.jpg");
+	background: url("../../assets/bg/amoroso04.jpg");
+	background-size: cover;
+}
+#bg-miyazaki01 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/miyazaki01.jpg");
+	background-size: cover;
+}
+#bg-miyazaki02 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/miyazaki02.jpg");
+	background-size: cover;
+}
+#bg-miyazaki03 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/miyazaki03.jpg");
+	background-size: cover;
+}
+#bg-critica01 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/critica01.jpg");
+	background-size: cover;
+}
+#bg-critica02 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/critica02.jpg");
+	background-size: cover;
+}
+#bg-considerazioni01 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/considerazioni01.jpg");
+	background-size: cover;
+}
+#bg-considerazioni02 {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/considerazioni02.jpg");
+	background-size: cover;
+}
+#bg-casttecnico {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/casttecnico.jpg");
+	background-size: cover;
+}
+#bg-bluray {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/bluray.jpg");
+	background-size: cover;
+}
+#bg-soundtrack {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/soundtrack.jpg");
+	background-size: cover;
+}
+#bg-credits {
+	background: #109ceb; /* fallback */
+	background: url("../../assets/bg/credits.jpg");
 	background-size: cover;
 }
 /* ===============
@@ -319,10 +394,10 @@ section,
 	width: 100% !important;
 }
 header {
-	min-height: 175px;
-	min-height: 10.94rem;
-	line-height: 175px;
-	line-height: 10.94rem;
+	min-height: 200px;
+	min-height: 12.5rem;
+	line-height: 200px;
+	line-height: 12.5rem;
 }
 .laterale img {
 	padding: 0 20px;
