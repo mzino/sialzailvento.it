@@ -467,6 +467,7 @@ MEDIA
 	display: block;
 	width: 500px;
 	width: 31.25rem;
+	text-align: center;
 }
 .media img {
 	display: block;
