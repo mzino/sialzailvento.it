@@ -235,17 +235,6 @@ footer {
 	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico01.jpg"); /* W3C */
 	background-size: cover;
 }
-#bg-storico02 {
-	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/storico02.jpg"); /* fallback */
-	background: -webkit-gradient(linear, left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* Saf4+, Chrome */
-	background:  -webkit-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* Chrome 10+, Saf5.1+ */
-	background:     -moz-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* FF3.6+ */
-	background:      -ms-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* IE10 */
-	background:       -o-linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* Opera 11.10+ */
-	background:          linear-gradient(left, rgba(255,255,255,.2) 0%, rgba(255,255,255,.2) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/storico02.jpg"); /* W3C */
-	background-size: cover;
-}
 #bg-politico {
 	background: #109ceb; /* fallback */
 	background: url("../../assets/bg/politico.jpg"); /* fallback */
@@ -436,11 +425,6 @@ footer {
 	#bg-storico01 {
 		background: #109ceb; /* fallback */
 		background: url("../../assets/bg/storico01.jpg");
-		background-size: cover;
-	}
-	#bg-storico02 {
-		background: #109ceb; /* fallback */
-		background: url("../../assets/bg/storico02.jpg");
 		background-size: cover;
 	}
 	#bg-politico {

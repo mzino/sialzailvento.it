@@ -198,11 +198,6 @@ footer {
 	background: url("../../assets/bg/storico01.jpg");
 	background-size: cover;
 }
-#bg-storico02 {
-	background: #109ceb; /* fallback */
-	background: url("../../assets/bg/storico02.jpg");
-	background-size: cover;
-}
 #bg-politico {
 	background: #109ceb; /* fallback */
 	background: url("../../assets/bg/politico.jpg");
