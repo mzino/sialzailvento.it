@@ -39,4 +39,4 @@ RewriteCond %{HTTP_USER_AGENT} "android|blackberry|googlebot-mobile|iemobile|ipa
 RewriteCond %{HTTP:Cookie}        !\smredir=0(;|$)
 
 # Redirect to mobile page
-RewriteRule ^ http://m.hintclub.net%{REQUEST_URI} [R,L]
+RewriteRule ^ http://m.sialzailvento.it%{REQUEST_URI} [R,L]
