@@ -179,6 +179,8 @@ article {
 	font-size: 1.625rem;
 	text-align: center;
 	margin: 0;
+	color: #f6e48c;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .5), -1px -1px 2px rgba(0, 0, 0, .5);
 }
 .button-top a {
 	color: #666;
@@ -840,7 +842,7 @@ body#menu-home .grid {
 	background:      -ms-linear-gradient(left, rgba(255,255,255,.1) 0%, rgba(255,255,255,.15) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/home_cover.jpg") no-repeat;
 	background:       -o-linear-gradient(left, rgba(255,255,255,.1) 0%, rgba(255,255,255,.15) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/home_cover.jpg") no-repeat;
 	background:          linear-gradient(left, rgba(255,255,255,.1) 0%, rgba(255,255,255,.15) 50%, rgba(255,255,255,1) 100%), url("../../assets/bg/home_cover.jpg") no-repeat;
-	background-size: 800px auto;
+	background-size: 850px auto;
 	background-color: #fff;
 }
 body#menu-home h1,
@@ -863,8 +865,12 @@ body#menu-home h4 {
 	margin: 20px auto;	
 }
 body#menu-home section {
-	min-height: 800px;
+	min-height: 910px;
 }
 body#menu-home .button-top {
 	display: none;
+}
+nav a.link-evidenziato {
+	color: #f6e48c;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, .5), -1px -1px 2px rgba(0, 0, 0, .5);
 }
