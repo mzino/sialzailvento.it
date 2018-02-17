@@ -39,4 +39,4 @@ RewriteCond %{HTTP_USER_AGENT} "!(android|blackberry|googlebot-mobile|iemobile|i
 RewriteCond %{HTTP:Cookie}        !\smredir=0(;|$)
 
 # Redirect to desktop page
-RewriteRule ^ http://saiv.hintclub.co%{REQUEST_URI} [R,L]
+RewriteRule ^ http://saiv.oniz.me%{REQUEST_URI} [R,L]
